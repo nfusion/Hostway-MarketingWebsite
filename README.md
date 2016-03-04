@@ -1,7 +1,7 @@
 # Hostway Marketing Website
 ## Development Workflow
 
-### User Roles and Requrements
+### User Roles and Requirements
 
 All users must have GitHub accounts that use two-factor authentication; this will be audited before granting access.
 
@@ -52,9 +52,7 @@ Code standards are important to ensure the code will remain easy to work on for 
 
 * [Accessibility Coding Standards – Make WordPress Core](https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/) 
 
-* WordPress HTML / CSS / JavaScript standards are derived from:
-
-    * [Design Patterns Library | Fellowship Technologies](http://developer.fellowshipone.com/patterns/code.php)
+* WordPress HTML / CSS / JavaScript standards are derived from the [Fellowship Technologies Design Patterns Library](http://developer.fellowshipone.com/patterns/code.php)
 
 #### Dev Utilities
 * [Theme Check — WordPress Plugins](https://wordpress.org/plugins/theme-check/)
