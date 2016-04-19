@@ -1,4 +1,4 @@
-# Hostway Marketing Website
+# Hostway Marketing Website ![StyleCI badge](https://styleci.io/repos/51846064/shield "StyleCI Status - master branch")
 ## Development Workflow
 
 ### User Roles and Requirements
@@ -21,7 +21,7 @@ nFusion will designate a technical lead who will be the sole user responsible fo
 
 ### Pull Requests
 
-* Code will flow through CircleCI to ensure quality prior to manual review; requests that fail the test process will not be promoted to the tech lead
+* Code will flow through [StyleCI](https://styleci.io/) and [Hound CI](https://houndci.com) to ensure quality prior to manual review; requests that fail the process will not be promoted
 
 * The technical lead will manually review the issue and code change set when a pull request successfully passes all automated tests
 
@@ -57,4 +57,3 @@ Code standards are important to ensure the code will remain easy to work on for 
 #### Dev Utilities
 * [Theme Check — WordPress Plugins](https://wordpress.org/plugins/theme-check/)
 * [WP-CLI](http://wp-cli.org/)
-
