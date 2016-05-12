@@ -7,7 +7,7 @@ get_header(); ?>
 			<div class="sectionBlock-topSection">
 				<div class="row">
 					<div class="searchResultTop-left col-xs-6">
-						<h3 class="sectionBlock-subheading">Search results</h3>
+						<h1 class="sectionBlock-subheading">Search results</h1>
 					</div>
 
 					<div class="searchResultTop-right col-xs-6">

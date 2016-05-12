@@ -11,7 +11,7 @@
 					<?php endif; ?>
 
 					<?php if ( isset( $section['subtitle'] ) && ! empty( $section['subtitle'] ) ) : ?>
-						<?php $tag = ic_get_title_tag(); ?>
+						<?php $tag = ic_get_title_tag( $section ); ?>
 						<<?php echo $tag;?> class="sectionBlock-subheading">
 							<?php echo esc_html( $section['subtitle'] ); ?>
 						</<?php echo $tag;?>>

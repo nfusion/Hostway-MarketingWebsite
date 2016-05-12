@@ -7,13 +7,16 @@
  */
 function ic_get_flexible_content( $post_id = null ) {
 	if ( $sections = get_field( 'post_content', $post_id ) ) {
-		wp_cache_set( 'h1', false );
+
+		$i = 1;
 
 		foreach ( $sections AS $key => $section ) {
 
 			if ( $section['acf_fc_layout'] === 'defined-section' ) {
 				$section = get_defined_section( $section );
 			}
+
+			$section['_index'] = $i ++;
 
 			$file = locate_template( 'template-parts/flexible-content/' . $section['acf_fc_layout'] . '.php' );
 
@@ -72,11 +75,13 @@ function get_defined_sections_list() {
 	return $sections_array;
 }
 
-function ic_get_title_tag() {
+function ic_get_title_tag( $section = array() ) {
 
-	if ( wp_cache_get( 'h1' ) === false ) {
-		wp_cache_set( 'h1', true );
+	if ( ! isset( $section['_index'] ) ) {
+		$section['_index'] = 1;
+	}
 
+	if ( $section['_index'] == 2 ) {
 		return 'h1';
 	}
 

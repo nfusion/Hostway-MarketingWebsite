@@ -6,7 +6,7 @@
 	<?php if ( $full_width ) : ?>
 
 		<?php if ( isset( $section['content_title'] ) && ! empty( $section['content_title'] ) ) : ?>
-			<?php $tag = ic_get_title_tag(); ?>
+			<?php $tag = ic_get_title_tag( $section ); ?>
 			<div class="sectionBlock-topSection">
 				<<?php echo $tag;?> class="sectionBlock-subheading"><?php echo esc_html( $section['content_title'] ); ?></<?php echo $tag;?>>
 			</div>
@@ -17,7 +17,7 @@
 		<div class="container">
 
 			<?php if ( isset( $section['content_title'] ) && ! empty( $section['content_title'] ) ) : ?>
-				<?php $tag = ic_get_title_tag(); ?>
+				<?php $tag = ic_get_title_tag( $section ); ?>
 				<div class="sectionBlock-topSection">
 					<<?php echo $tag;?> class="sectionBlock-subheading"><?php echo esc_html( $section['content_title'] ); ?></<?php echo $tag;?>>
 				</div>

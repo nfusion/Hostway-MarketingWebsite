@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-md-9">
 					<div class="sectionBlock-topSection">
-						<?php $tag = ic_get_title_tag(); ?>
+						<?php $tag = ic_get_title_tag( $section ); ?>
 						<<?php echo $tag;?> class="sectionBlock-subheading small">
 							<?php echo esc_html( $section['subtitle'] ); ?>
 						</<?php echo $tag;?>>

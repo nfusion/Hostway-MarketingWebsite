@@ -10,7 +10,7 @@ $bg_color = isset( $section['background_color'] ) && ! empty( $section['backgrou
 	<div class="container">
 
 		<?php if ( isset( $section['title'] ) && ! empty( $section['title'] ) ) : ?>
-			<?php $tag = ic_get_title_tag(); ?>
+			<?php $tag = ic_get_title_tag( $section ); ?>
 			<<?php echo $tag;?> class="sectionBlock-topSection">
 				<<?php echo $tag;?> class="sectionBlock-subheading"><?php echo esc_html( $section['title'] ); ?></<?php echo $tag;?>>
 			</<?php echo $tag;?>>

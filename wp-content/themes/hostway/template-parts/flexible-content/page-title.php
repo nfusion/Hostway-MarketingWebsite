@@ -20,9 +20,10 @@ $bg  = isset( $section['background_image'] ) && ! empty( $section['background_im
 						<?php endif; ?>
 
 						<?php if ( isset( $section['subtitle'] ) && ! empty( $section['subtitle'] ) ) : ?>
-							<h2 class="sectionBlock-subheading">
+							<?php $tag = ic_get_title_tag( $section ); ?>
+							<<?php echo $tag;?> class="sectionBlock-subheading">
 								<?php echo esc_html( $section['subtitle'] ); ?>
-							</h2>
+							</<?php echo $tag;?>>
 						<?php endif; ?>
 
 						<?php if ( isset( $section['description'] ) && ! empty( $section['description'] ) ) : ?>
