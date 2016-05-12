@@ -1,0 +1,18 @@
+@import "bourbon";
+@import "neat";
+@import "normalize";
+@import "h5bp";
+@import "bootstrap/variables.sass";
+@import "bootstrap/grid.scss";
+@import "wordpress";
+
+@import 'components/_global.scss'; /* global styles */
+@import 'components/_header.scss'; /* file with header styles */
+@import 'components/_footer.scss'; /* file with footer styles */
+@import 'components/_slick.scss'; /* slick slider styles */
+@import 'components/_index.scss'; /* home page styles */
+@import 'components/_solutions.scss'; /* solutions page styles */
+@import 'components/_product.scss'; /* product page styles */
+@import 'components/_search.scss'; /* search result page styles */
+@import 'components/_404.scss'; /* 404 page styles */
+

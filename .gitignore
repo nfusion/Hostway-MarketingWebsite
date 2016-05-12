@@ -1,3 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+### WordPress template
 *.log
 .htaccess
 sitemap.xml
@@ -12,7 +14,9 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/themes/node_modules
 
 /readme.html
 /license.txt
 
+node_modules
