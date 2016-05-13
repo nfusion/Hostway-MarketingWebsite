@@ -1,4 +1,4 @@
-# Hostway Marketing Website ![StyleCI badge](https://styleci.io/repos/51846064/shield "StyleCI Status - master branch")
+# Hostway Marketing Website
 ## Development Workflow
 
 ### User Roles and Requirements
@@ -20,8 +20,6 @@ nFusion will designate a technical lead who will be the sole user responsible fo
 * Every Commit should reference a GitHub issue at the beginning of the commit such as "#23: task completed"
 
 ### Pull Requests
-
-* Code will flow through [StyleCI](https://styleci.io/) and [Hound CI](https://houndci.com) to ensure quality prior to manual review; requests that fail the process will not be promoted
 
 * The technical lead will manually review the issue and code change set when a pull request successfully passes all automated tests
 
