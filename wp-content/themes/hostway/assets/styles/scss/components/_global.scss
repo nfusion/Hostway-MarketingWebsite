@@ -2,7 +2,7 @@ body{
 	font-family: $baseFontFamily;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1.4em;
+	line-height: 1.4;
 	min-width: $phone-width;
 	background: #fff;
 	color: #000;
@@ -128,6 +128,11 @@ blockquote{
 	padding-right: 8px;
 }
 
+.visible-mxs,
+.visible-small{
+	display: none;
+}
+
 @media (max-width: 600px){
 	*[class*="col-mxs-"]{
 		float: left;
@@ -168,6 +173,23 @@ blockquote{
 	.col-mxs-1 {
 	  width: 8.33333333%;
 	}
+
+	.hidden-mxs{
+		display: none;
+	}
+
+	.visible-mxs{
+		display: block;
+	}
+}
+
+@media (max-width: 500px){
+	.visible-small{
+		display: block;
+	}
+	.hidden-small{
+		display: none;
+	}
 }
 
 @media (max-width: $tablet-width - 1){
@@ -191,11 +213,15 @@ blockquote{
 	}
 
 	@media (max-width: $mobile-width - 1){
-		padding: 2.8em 0 2em;
+		padding: 2em 0;
 		margin-bottom: 5.3rem;
 
 		.sectionBlock-topSection{
 			padding: 0;
+			margin-bottom: 1rem !important;
+		}
+		.sectionBlock-button{
+			margin: 0 !important;
 		}
 		.circleBlock{
 			float: none;
@@ -213,6 +239,19 @@ blockquote{
 		.circleBlock{
 			float: right;
 		}
+	}
+
+	@media (max-width: 600px){
+		margin-bottom: 3rem;
+	}
+}
+
+.topBannerResponsive{
+	margin-bottom: 4rem;
+
+	.circleBlock{
+		float: none;
+		margin: 0 auto;
 	}
 }
 
@@ -260,6 +299,13 @@ blockquote{
 			font-weight: 400;
 			font-size: 0.778em;
 		}
+	}
+
+	@media (max-width: 700px){
+		font-size: 0.7em;
+	    padding: 15px;
+	    width: 140px;
+	    height: 140px;
 	}
 }
 	
@@ -774,6 +820,10 @@ blockquote{
 				right: -7px;
 			}
 		}
+	}
+	@media (max-width: 600px){
+		max-width: 380px;
+		margin: 0 auto;
 	}
 }
 

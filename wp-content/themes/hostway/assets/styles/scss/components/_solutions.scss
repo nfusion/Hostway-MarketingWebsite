@@ -29,6 +29,11 @@
 				font-size: 1.333em;
 			}
 		}
+
+		@media (max-width: 600px){
+			max-width: 360px;
+			margin: 0 auto;
+		}
 	}
 
 	/* Plans */

@@ -1,4 +1,13 @@
 (function ($) {
+	function ifSafari(){
+		$.browser.safari = ($.browser.webkit && !(/chrome/.test(navigator.userAgent.toLowerCase())));
+		if ($.browser.safari) {
+			$('.main_menu').addClass('isSafari');
+		}
+		else{
+			$('.main_menu').addClass('isNotSafari');
+		}
+	}
     function slidersInits(){
 		$('.sliderWrapper').slick({
 			infinite: true,
@@ -166,6 +175,7 @@
 	
 
 	$(document).ready(function(){
+		ifSafari();
 		infastructureMaps();
 		slidersInits();
 		topMenu();

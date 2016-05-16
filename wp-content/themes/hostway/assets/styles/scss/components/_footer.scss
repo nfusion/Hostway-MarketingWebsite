@@ -91,6 +91,59 @@
 				}
 			}
 		}
+
+		&.menu_first{
+			ul{
+				@media (max-width: 507px){
+					li{
+						&:last-child{
+							&:before{
+								background: none !important;
+							}
+						}
+					}
+				}
+				@media (max-width: 379px){
+					li{
+						&:last-child{
+							&:before{
+								background: #7b90a0 !important;
+							}
+						}
+						&:nth-last-child(2){
+							&:before{
+								background: none !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.menu_second{
+			ul{
+				@media (max-width: 991px){
+					li{
+						&:last-child{
+							&:before{
+								background: none !important;
+							}
+						}
+					}
+				}
+				@media (max-width: 516px){
+					li{
+						&:nth-last-child(2){
+							&:before{
+								background: none !important;
+							}
+						}
+					}
+				}
+				
+			}
+				
+		}
 	}
 
 	@media (max-width: 992px){
